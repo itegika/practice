@@ -1,0 +1,87 @@
+body {
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* DOM */
+
+#elem.blue {
+  color: blue;
+  font-size: 30px;
+}
+
+#users {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#users li {
+  border: 1px dashed black;
+  margin: 10px 30px;
+  padding: 20px;
+  background-color: antiquewhite;
+}
+
+#users h2 {
+  margin: 0;
+}
+
+#users span:last-child {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+/* EVENTS */
+
+input {
+  padding: 8px;
+  outline: none;
+}
+
+/* task 1 */
+
+.error {
+  border: 1px solid red;
+}
+
+/* task 2 */
+
+.popup {
+  display: none;
+  position: absolute;
+  width: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: blanchedalmond;
+  text-align: center;
+  box-shadow: 0px 0px 35px 6px rgba(0, 0, 0, 0.75);
+}
+
+.popup_open {
+  display: block;
+}
+
+/* task 3 */
+
+.rect {
+  width: 100px;
+  height: 50px;
+  border: 1px solid black;
+}
+
+.red {
+  background-color: red;
+}
+
+/* task 5 */
+
+.todo-list li {
+  cursor: pointer;
+}
+
+.complete {
+  text-decoration: line-through;
+}

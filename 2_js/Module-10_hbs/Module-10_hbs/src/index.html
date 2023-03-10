@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Module 10</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!--  template in HTML - CDN / import Handlebars -->
+    <template id="menu-template">
+      <div class="menu">
+        <h3 class="menu-title">{{title}}</h3>
+        <ul class="menu-list">
+          {{#each items}}
+          <li class="menu-item">{{this}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </template>
+
+    <!-- Scripts -->
+
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"
+      integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=="
+      crossorigin="anonymous"
+    ></script> -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script> -->
+
+    <!-- Tasks -->
+
+    <div class="content-placeholder"></div>
+
+    <ul class="list-placeholder"></ul>
+  </body>
+</html>

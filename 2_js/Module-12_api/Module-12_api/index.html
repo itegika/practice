@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>APIs Examples</title>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        background: #fff;
+        font-size: 16px;
+        padding: 0 10px 50px;
+      }
+
+      img,
+      video {
+        padding: 10px;
+      }
+
+      p {
+        margin: 5px;
+      }
+
+      p.api-name {
+        padding-top: 56px;
+        font-weight: bold;
+      }
+
+      .container {
+        padding: 20px 0;
+        min-width: 480px;
+      }
+
+      .logo {
+        padding: 0 10px;
+      }
+
+      .mdc-btn {
+        min-width: 88px;
+        height: 36px;
+        padding: 0 16px;
+        border: 0;
+        outline: 0;
+        border-radius: 2px;
+        color: #fff;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 600;
+        background-color: #00796b;
+        cursor: pointer;
+        box-shadow: 0 4px 4px 0 rgba(#414141, 0.3);
+        &:hover {
+          background-color: #004c40;
+        }
+        &:active {
+          box-shadow: 0 6px 4px 0 rgba(#414141, 0.3);
+        }
+      }
+
+      .search-form {
+        display: flex;
+        justify-content: start;
+        padding: 20px;
+        box-shadow: 0 0 2px 2px rgba(#414141, 0.2);
+      }
+
+      .search-form input {
+        margin-right: 12px;
+        padding: 4px;
+        outline: 0;
+        border: 0;
+        color: #263238;
+        font-size: 18px;
+        background-color: transparent;
+        border-bottom: 2px solid #00796b;
+        &::placeholder {
+          color: #616161;
+        }
+      }
+
+      .result-1,
+      .result-3,
+      .result-4 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+      }
+
+      table.minimalistBlack {
+        margin-top: 20px;
+        border: 3px solid #000000;
+        text-align: left;
+        border-collapse: collapse;
+      }
+
+      table.minimalistBlack td,
+      table.minimalistBlack th {
+        border: 1px solid #000000;
+        padding: 5px 10px;
+      }
+
+      table.minimalistBlack thead {
+        background: #cfcfcf;
+        background: linear-gradient(
+          to bottom,
+          #dbdbdb 0%,
+          #d3d3d3 66%,
+          #cfcfcf 100%
+        );
+        border-bottom: 3px solid #000000;
+      }
+
+      table.minimalistBlack thead th {
+        font-size: 18px;
+        font-weight: bold;
+        color: #000000;
+        text-align: left;
+      }
+
+      .error {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <ol>
+      <!-- Task 1 jsonplaceholder -->
+      <li>
+        <p class="api-name">
+          Get all users info from
+          <a href="https://jsonplaceholder.typicode.com/"
+            >jsonplaceholder.typicode.com</a
+          >
+        </p>
+
+        <div class="container" id="task-1">
+          <button class="mdc-btn" type="button">get</button>
+          <table class="users-table minimalistBlack"></table>
+        </div>
+      </li>
+      <!-- Task 2 jsonplaceholder -->
+      <li>
+        <p class="api-name">
+          Get user by ID (1-10) from
+          <a href="https://jsonplaceholder.typicode.com/"
+            >jsonplaceholder.typicode.com</a
+          >
+        </p>
+
+        <div class="container" id="task-2">
+          <form class="search-form">
+            <input type="text" name="userId" placeholder="Enter user id" />
+            <button class="mdc-btn" type="submit">search</button>
+          </form>
+          <div class="result"></div>
+          <div class="error"></div>
+        </div>
+      </li>
+      <!-- Task 3 GitHub -->
+      <li>
+        <p class="api-name">
+          Get GitHub user by name from
+          <a href="https://developer.github.com/v3/">GitHub API</a>
+        </p>
+
+        <div class="container" id="task-3">
+          <form class="search-form">
+            <input type="text" name="name" placeholder="Enter user name" />
+            <button class="mdc-btn" type="submit">search</button>
+          </form>
+          <div class="result"></div>
+          <div class="error"></div>
+        </div>
+      </li>
+     
+    </ol>
+
+    <!-- js script -->
+
+    <script src="./1-json_all.js" type="module"></script>
+    <script src="./2-json_id.js" type="module"></script>
+    <script src="./3-github.js" type="module"></script>
+  </body>
+</html>
